@@ -1,0 +1,23 @@
+# IDE configurations
+.idea/
+.vscode/
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+
+# Pytest cache
+.pytest_cache/
+
+# Target distributions
+/dist/
+
+# Program output
+/output/
+
+# Use these directories for local runs or experiments
+/dev/
+/temp/

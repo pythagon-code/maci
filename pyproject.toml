@@ -1,0 +1,30 @@
+[project]
+name = "maci"
+version = "0.1.0"
+description = "Mutualistic Agents Create Intelligence"
+license = "Apache-2.0"
+readme = "README.md"
+dynamic = ["dependencies", "requires-python"]
+
+[[project.authors]]
+name = "Abhay Pokhriyal"
+email = "abhaypokh89@gmail.com"
+
+[project.urls]
+repository = "https://github.com/pythagon-code/project-genesis"
+
+[[tool.poetry.source]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+priority = "explicit"
+
+[tool.poetry.dependencies]
+poetry-core = "==2.2.1"
+python = ">=3.12,<3.14"
+numpy = "2.4.0"
+ruamel-yaml = "0.18.17"
+torch = {version = "2.8.0", source = "pytorch-cu128"}
+tqdm = "4.67.1"
+
+[project.group.test.dependencies]
+pytest = "8.4.2"
