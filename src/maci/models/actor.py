@@ -4,7 +4,7 @@ from torch import Tensor, nn
 from types import SimpleNamespace
 from typing import TYPE_CHECKING
 
-from ..core.config import config
+from ..core.app import config
 from .critic import Critic
 
 class Actor:

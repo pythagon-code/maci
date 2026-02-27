@@ -3,7 +3,7 @@ import torch
 from torch import Tensor, nn
 from torch.nn.functional import mse_loss
 
-from ..core.config import config
+from ..core.app import config
 from .actor import Actor
 
 
