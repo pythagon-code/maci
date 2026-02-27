@@ -2,12 +2,12 @@ from __future__ import annotations
 from torch import Tensor
 
 class Neuron:
-    def __init__(self, id) -> None:
+    def __init__(self, id: int) -> None:
         self._id = id
         self._sources = []
-        self._targets = []
+        self._destinations = []
 
-    
+
     def add_out_neighbor(self, neuron: Neuron) -> None:
         self._targets.append(neuron)
         neuron._sources.append(self)
